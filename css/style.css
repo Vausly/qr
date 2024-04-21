@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: green; /* Ubah warna judul menjadi green */
+}
+#container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Make the main container taller */
+    background-color: #f0f0f0;
+}
+#input-label {
+    margin-bottom: 5px;
+}
+#input-text {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+#generate-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#download-btn, #create-another-btn {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#generate-btn:hover, #download-btn:hover, #create-another-btn:hover {
+    background-color: red; /* Warna merah ketika diarahkan cursor */
+}
+
+#more-actions {
+    margin-top: 20px;
+    font-weight: bold;
+    display: none;
+}
+#output-container {
+    margin-top: 20px;
+    width: 100%; /* Set initial width to match input box */
+    max-width: 100%; /* Set maximum width to match input box */
+    height: 320px; /* Set the desired height */
+    background-color: #fff;
+}
+#qrcode-box {
+    border: 2px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Take full height of the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 100%; /* Set width to 100% */
+}
+#qrcode {
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#success-message {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add margin-bottom for space */
+    display: none;
+}
+#share-text {
+    margin-top: 20px; /* Move space before this text */
+    margin-bottom: 0; /* Remove margin-bottom */
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+display: flex;
+flex-direction: column; /* Mengubah orientasi flex menjadi column */
+align-items: flex-start; /* Mengatur posisi elemen ke kiri */
+background-color: black;
+padding: 15px;
+}
+
+.logo-container {
+background-color: black; /* Latar belakang hitam untuk logo */
+padding: 15px;
+}
+
+h1 {
+color: green;
+font-size: 36px;
+font-weight: bold;
+margin: 0;
+}
+
+nav {
+background-color: #444; /* Latar belakang abu-abu untuk navbar */
+border-radius: 0 0 5px 5px; /* Efek sudut melengkung hanya pada bagian bawah navbar */
+width: 100%; /* Lebar penuh untuk navbar */
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 10px; /* Padding untuk memberikan jarak di sekitar teks navbar */
+display: flex;
+justify-content: flex-start; /* Mengatur posisi navbar ke kiri */
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav a {
+text-decoration: none;
+color: green; /* Warna hijau untuk teks navbar */
+font-size: 16px;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: red; /* Warna merah saat diarahkan cursor */
+}
+
+footer {
+    background-color: #000000; /* Warna hitam */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #008000; /* Warna hijau */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold; /* Tebal */
+    transition: color 0.3s; /* Transisi warna untuk efek halus */
+}
+
+footer a:hover {
+    color: #ff0000; /* Warna merah saat diarahkan */
+}
+
+.copyright {
+    color: #008000; /* Warna hijau untuk teks copyright */
+    margin-top: 10px; /* Spasi atas */
+    border-top: 1px solid #008000; /* Garis pemisah dengan warna hijau */
+    padding-top: 10px; /* Spasi atas pada teks copyright */
+    font-weight: bold; /* Tebal */
+    transition: color 0.3s; /* Transisi warna untuk efek halus */
+}
+
+.copyright-text:hover {
+    color: #ff0000; /* Warna merah saat diarahkan */
+}

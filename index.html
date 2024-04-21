@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate a simple QR Code.">
+    
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <div class="logo-container">
+        <h1>LESUNK QR</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://www.lesunk.com" target="_blank" >Blog</a></li>
+            <li><a href="https://lesunk.com/bio" target="_blank" >Contact</a></li>
+            <li><a href="https://lesunk.com/donate" target="_blank">Donate</a></li>
+        </ul>
+    </nav>
+
+</head>
+<body>
+
+    <div id="title">
+        <br>
+        <h1>QR Code Generator</h1>
+        <br>
+    </div>
+
+    <div id="container">
+        <label id="input-label" for="input-text">Enter text or URL:</label>
+        <input type="text" id="input-text" placeholder="Type your text or URL here">
+
+        <button id="generate-btn">Generate QR Code</button>
+
+        <div id="output-container">
+            <div id="qrcode-box">
+                <div id="success-message">Success! Here's your QR Code!</div>
+                <div id="qrcode">Your QR Code will be shown here!</div>
+            </div>
+        </div>
+
+        <p id="more-actions">More Actions</p>
+        <button id="download-btn" disabled>Download QR Code</button>
+        <button id="create-another-btn">Create Another QR Code</button>
+
+        <!-- Two-line space -->
+        <br><br>
+
+        <p id="share-text">Don't forget to share this tool!<br>This is a free tool to generate a simple QR Code.</p>
+        
+    </div>
+
+    <!-- Deskripsi di luar container utama -->
+    <br>
+
+    <h2>Simple and Quick!</h2>
+    <p id="description">Generate QR codes easily with this simple tool. Enter your text or URL, click the button, and get your QR code instantly!</p>
+
+    <br><br>
+
+    <h2>Its free!</h2>
+    <p id="description">Our service is free, but you can <a href="https://s.id/donate-lesunk" target="_blank">support me by gifting or buy me a coffee.</a></p>
+
+    <br><br>
+
+    <h2>Share your QR Code</h2>
+    <p id="description">Your generated QR Codes can be used for publications, printing, advertisement, work, documents, etc.</p>
+
+    <br>
+    <hr>
+    <br>
+    <h2>Note</h2>
+    <p>In some case, maybe the qr code can not be scanned when you use the png directly (but if you scanned using scanner app thats don't have a problem). </p><p>If this happened, try to add some margin in editor, or test the QR code you have downloaded on: <a href= "https://dnschecker.org/qr-code-scanner.php" target="_blank">https://dnschecker.org/qr-code-scanner.php</a></p> 
+<br><hr><br>
+    <script>
+       
+    </script>
+
+    <footer>
+        <a href="https://www.lesunk.com">Blog</a>
+        <a href="https://lesunk.com/bio">Contact</a>
+        <a href="https://lesunk.com/donate">Support</a>
+        <a href="https://dnschecker.org/qr-code-scanner.php">Test QR Code</a>
+        <div class="copyright">
+           <br> Copyright &copy; 2018 - <span id="currentYear"></span> | Page developed by<a href="https://www.lesunk.com/" class="copyright-text">Lesunk Media</a>
+            <p> West Kalimantan, Indonesia </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
