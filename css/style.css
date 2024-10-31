@@ -1,25 +1,33 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
-}
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #1a1c8f, #3d1666, #9c219c);
+  }
+
 #title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: green; /* Ubah warna judul menjadi green */
+    color: rgb(254, 0, 119); 
 }
+
+/*QR Code starts here*/
 #container {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #ccc;
+    border: 3px solid #000000;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%; /* Make the main container taller */
-    background-color: #f0f0f0;
+    background-color: #630d98;
+    border-radius: 10px;
 }
 #input-label {
     margin-bottom: 5px;
@@ -30,20 +38,22 @@ body {
     margin-bottom: 10px;
 }
 #generate-btn {
-    padding: 10px;
-    background-color: #4CAF50;
+    padding: 10px 20px;
+    background-color: rgb(254, 0, 119);
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 #download-btn, #create-another-btn {
     padding: 10px;
     margin-top: 10px;
-    background-color: #4CAF50;
+    background-color: rgb(254, 0, 119);
     color: white;
     border: none;
     cursor: pointer;
     display: none;
+    border-radius: 10px;
 }
 
 #generate-btn:hover, #download-btn:hover, #create-another-btn:hover {
@@ -80,6 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#000000;
 }
 #success-message {
     font-weight: bold;
@@ -87,17 +98,13 @@ body {
     margin-top: 10px;
     margin-bottom: 10px; /* Add margin-bottom for space */
     display: none;
+    color: #000000;
 }
 #share-text {
     margin-top: 20px; /* Move space before this text */
     margin-bottom: 0; /* Remove margin-bottom */
 }
-
-body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-}
+/*QR Code Box Ends Here*/
 
 header {
 display: flex;
@@ -108,19 +115,19 @@ padding: 15px;
 }
 
 .logo-container {
-background-color: black; /* Latar belakang hitam untuk logo */
+background-color: #201140;
 padding: 15px;
 }
 
 h1 {
-color: green;
+color: rgb(254, 0, 119);
 font-size: 36px;
 font-weight: bold;
 margin: 0;
 }
 
 nav {
-background-color: #444; /* Latar belakang abu-abu untuk navbar */
+background-color: #2c1e4a; 
 border-radius: 0 0 5px 5px; /* Efek sudut melengkung hanya pada bagian bawah navbar */
 width: 100%; /* Lebar penuh untuk navbar */
 }
@@ -137,25 +144,29 @@ nav li {
 margin-right: 20px;
 }
 
-nav a {
-text-decoration: none;
-color: green; /* Warna hijau untuk teks navbar */
-font-size: 16px;
-transition: color 0.3s;
+a {
+  color: rgb(254, 0, 119);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-color: red; /* Warna merah saat diarahkan cursor */
+a:hover, a:active {
+  color: red;
+}
+
+a:visited {
+    color: rgb(245, 142, 212);
 }
 
 footer {
-    background-color: #000000; /* Warna hitam */
+    background-color: #201140; 
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #008000; /* Warna hijau */
+    color: rgb(254, 0, 119);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold; /* Tebal */
@@ -167,9 +178,9 @@ footer a:hover {
 }
 
 .copyright {
-    color: #008000; /* Warna hijau untuk teks copyright */
+    color: rgb(254, 0, 119);
     margin-top: 10px; /* Spasi atas */
-    border-top: 1px solid #008000; /* Garis pemisah dengan warna hijau */
+    border-top: 1px solid rgb(254, 0, 119); /* Garis pemisah dengan warna hijau */
     padding-top: 10px; /* Spasi atas pada teks copyright */
     font-weight: bold; /* Tebal */
     transition: color 0.3s; /* Transisi warna untuk efek halus */
@@ -177,4 +188,12 @@ footer a:hover {
 
 .copyright-text:hover {
     color: #ff0000; /* Warna merah saat diarahkan */
+}
+
+/* Media queries untuk perangkat mobile */
+@media screen and (max-width: 600px) {
+  .randomnumgenerator {
+    width: 90%;
+    padding: 10px;
+  }
 }
